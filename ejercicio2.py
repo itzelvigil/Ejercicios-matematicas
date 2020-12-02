@@ -19,6 +19,8 @@ pca=PCA(n_components=2)
 pca.fit(diabetes.data)
 #print(principalComponents)
 transformada=pca.transform(diabetes.data)
+#pr = pd.DataFrame(data = diabetes, columns = caracteristicas).head()
+
 print("Valores del data set original: ")
 print(diabetes.data.shape)
 print("Valores del data set despues de tranformar los datos: ")

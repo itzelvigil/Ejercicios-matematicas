@@ -6,6 +6,7 @@ plt.rcParams['figure.figsize'] = (12.0, 9.0)
 # Preprocessing Input data
 #Para este ejercicio utilice el mismo data set que el ejercicio anterior,donde es la informacion de casos de diabetes en distintos pacientes
 data = pd.read_csv('diabetes.csv')
+print(data.head(5))
 
 #tome la primera columna que es la edad
 X = data.iloc[:, 0]
